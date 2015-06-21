@@ -223,6 +223,8 @@ $l['finish_report_type_html'] = "plik HTML";
 
 $l['warning_innodb'] = "Tabela \"{1}\" jest aktualnie w formacie InnoDB. Wysoce zalecana jest konwersja jej do typu MyISAM. W innym wypadku mogą wystąpić poważne spadki w wydajności podczas pracy MyBB Merge System.";
 
+$l['error_no_admin'] = 'Tylko administratorzy mogą uruchomić merge system. Przejdź do strony głównej forum i zaloguj się na konto administratora.';
+
 $l['error_invalid_board'] = "Wybrany moduł nie istnieje.";
 $l['error_js_off'] = 'Wygląda na to, że w przeglądarce, której używasz, została wyłączona obsługa skryptów JavaScript. MyBB Merge System wymaga, aby ich obsługa była włączona w celu poprawnego działania. Po włączeniu obsługi JavaScript w przeglądarce, odśwież tę stronę.';
 $l['error_list'] = "MyBB Merge System napotkał poniższe błędy:";
@@ -234,6 +236,7 @@ $l['error_database_cant_connect'] = "Nie można połączyć się z bazą danych 
 $l['error_database_wrong_table'] = "Baza danych silnika {1} nie mogła zostać odnaleziona w '{2}'.  Upewnij się, że baza danych silnika {1} istnieje w tej bazie danych z podanym prefiksem do tabel.";
 $l['error_database_list'] = "Wygląda na to, że w podane dane do bazy danych są błędne";
 $l['error_database_continue'] = "Po naprawieniu powyższych błędów będzie można kontynuować proces importu.";
+$l['error_database_non_supported'] = 'Wygląda na to, że Twój hosting nie obsługuje żadnego z wymaganych rozszerzeń bazy danych.';
 
 $l['loginconvert_title'] = "MyBB Merge System - import haseł użytkowników";
 $l['loginconvert_message'] = "<div class=\"error\">
