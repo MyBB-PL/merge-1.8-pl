@@ -1,6 +1,6 @@
 <?php
 /**
- * MyBB Merge System 1.8.4 Polish Language File
+ * MyBB Merge System 1.8.6 Polish Language File
  * Copyright © 2008-2015 MyBBoard.pl Team
  * Licencja: http://www.mybb.com/download/merge-system/license/
  */
@@ -156,6 +156,9 @@ $l['database_details'] = "Podaj dane do bazy danych istniejącej instalacji siln
 $l['wbb_installationnumber'] = "Numer instalacji";
 $l['wbb_installationnumber_desc'] = "Jaki numer instalacji wybrałeś podczas instalacji?";
 
+$l['column_length_check'] = 'Sprawdzanie zgodności danych ze strukturą bazy danych MyBB...';
+$l['column_length_checking'] = 'Sprawdzanie kolumny {1} w tabeli {2}';
+
 $l['per_screen_config'] = "Konfiguracja opcji";
 $l['per_screen'] = "{1} - wybierz liczbę do zaimportowania w jednym momencie";
 $l['per_screen_label'] = "{1} do zaimportowania w jednym momencie";
@@ -173,30 +176,34 @@ $l['progress_none_left_settings'] = "Nie ma {1} do zaktualizowania. Naciśnij pr
 $l['import_successfully'] = "Pomyślnie zakończono import danych z modułu {1}.";
 
 $l['module_post_rebuilding'] = "Przebudowa liczników";
-$l['module_post_rebuild_counters'] = "<br />\nPrzebudowywanie liczników wątków, działów i statystyk...(To może chwilę potrwać)<br /><br />\n
-<br />\nPrzebudowywanie liczników wątków... ";
+$l['module_post_rebuild_counters'] = "<br />\nPrzebudowywanie wewnętrznych liczników...(To może chwilę potrwać)<br />";
+$l['module_post_rebuilding_thread'] = "Przebudowywanie liczników wątków... ";
 $l['module_post_thread_counter'] = "Przebudowa liczników dla wątku #{1}";
 $l['module_post_rebuilding_forum'] = "Przebudowywanie liczników działów...";
 $l['module_post_forum_counter'] = "Przebudowa liczników dla działu #{1}";
-$l['module_post_rebuilding_user'] = "Przebudowywanie liczników użytkowników...";
+$l['module_post_rebuilding_user_post'] = "Przebudowywanie liczników postów użytkowników...";
 $l['module_post_user_counter'] = "Przebudowywanie licznika dla użytkownika #{1}";
+$l['module_post_rebuilding_user_thread'] = "Przebudowywanie liczników wątków użytkowników...";
 
 $l['module_settings_updating'] = "Aktualizacja ustawień {1}";
 
 $l['module_attachment_link'] = "Podaj adres do folderu z załącznikami silnika {1}:";
-$l['module_attachment_label'] = "Adres URL folderu z załącznikami:";
+$l['module_attachment_label'] = "Adres URL folderu z załącznikami<br /><span class='smalltext'>Jeśli to możliwe, użyj względnej/bezwzględnej ścieżki. Pamiętaj, że obecny katalog to <b>merge</b>.</span>";
 $l['module_attachment_error'] = "Nie można przenieść załącznika (ID: {1})";
 $l['module_attachment_not_found'] = "Nie można odnaleźć załącznika (ID: {1})";
-$l['module_attachment_thumbnail_error'] = "Nie można przenieść miniatury załącznika (ID: {1})";
-$l['module_attachment_thumbnail_not_found'] = "Nie można odnaleźć miniatury załącznika (ID: {1})";
+$l['module_attachment_create_thumbnail'] = "Automatycznie utwórz miniaturki dla przesłanych obrazów";
+$l['module_attachment_create_thumbnail_note'] = 'Pamiętaj, że miniaturki muszą być tworzone na nowo za każdym razem, gdy zostanie zmienione ustawienie rozmiaru miniaturek. Jeśli nie uruchamiałeś jeszcze modułu ustawień, lub planujesz zmienić wspomniane ustawienie po konwersji, ustaw tę opcję na \'Nie\'.';
 
-$l['attmodule_notwritable'] = "Katalog zawierający wysłane przez użytkowników pliki (uploads/) nie jest zapisywalny. Nadaj mu poprawne uprawnienia ";
-$l['attmodule_chmod'] = "chmod";
-$l['attmodule_notwritable2'] = " aby zazwolić na zapisywanie do niego.";
 $l['attmodule_ipadress'] = "Nie można używać adresu \"localhost\" w adresie. Użyj swojego adresu IP (upewnij się, że port 80 jest otwarty w routerze bądź zaporze).";
 $l['attmodule_ipadress2'] = "Nie można używać adresu \"127.0.0.1\" w adresie. Użyj swojego adresu IP (upewnij się, że port 80 jest otwarty w routerze bądź zaporze).";
-$l['attmodule_notread'] = "Załączniki nie mogły zostać odczytane. Nadaj im odpowiednie uprawnienia ";
-$l['attmodule_notread2'] = ", aby zezwolić na ich odczytanie. Upewnij się także, że ścieżka do folderu z załącznikami jest poprawna. Jeżeli mimo wykonania powyższych czynności, nadal napotykasz na problemy, spróbuj użyć bezwzględnej ścieżki do folderu z załącznikami zamiast adresu URL (na przykład: /var/www/htdocs/path/to/your/old/forum/uploads/ or C:/path/to/your/old/forum/upload/). Upewnij się również, że dostęp do tego folderu nie jest blokowany przez plik htaccess";
+
+$l['module_avatar_link'] = "Podaj adres do folderu {1} z awatarami użytkowników";
+$l['module_avatar_label'] = "Adres URL folderu z obrazkami awatarów<br /><span class='smalltext'>Jeśli to możliwe, użyj względnej/bezwzględnej ścieżki. Pamiętaj, że obecny katalog to <b>merge</b>.</span>";
+$l['module_avatar_error'] = "Wystąpił błąd podczas przenoszenia awatara (ID: {1})";
+$l['module_avatar_not_found'] = "Nie można znaleźć awatara (ID: {1})";
+
+$l['upload_not_writeable'] = 'Katalog zawierający wysłane przez użytkowników pliki (uploads/) nie jest zapisywalny. Nadaj mu poprawne uprawnienia <a href="http://docs.mybb.com/CHMOD_Files.html" target="_blank">chmod</a> aby zezwolić na zapisywanie do niego.';
+$l['download_not_readable'] = 'Katalog nie jest zapisywalny. Nadaj mu poprawne uprawnienia <a href="http://docs.mybb.com/CHMOD_Files.html" target="_blank">chmod</a> aby zezwolić na zapisywanie do niego i upewnij się, że podany adres URL jest prawidłowy. Jeśli nadal problem będzię występował, spróbuj użyć pełnej ścieżki systemowej zamiast adresu URL (na przykład: /var/www/htdocs/sciezka/do/twojego/starego/forum/uploads/ lub C:/sciezka/do/twojego/starego/forum/upload/). Dodatkowo sprawdź, czy dostęp nie jest blokowany przez wpisy w pliku htaccess.';
 
 $l['removing_table'] = "Usuwanie tabeli {1}";
 $l['removing_columns'] = "Usuwanie kolumn {1} z tabeli {2}";
@@ -210,8 +217,6 @@ $l['finish_head'] = '<p>Proces importu został zakończony. Możesz teraz odwied
 $l['finish_whats_next_head'] = "Co dalej?";
 $l['finish_whats_next'] = 'Ponieważ niemożiwe jest łączenie wszystkich uprawnień, ustawień i liczników, musisz wykonać teraz kilka rzeczy, aby być pewnym, że wszystko działa tak jak powinno:
 		<ul>
-			<li>Przebuduj <a href="../{1}/index.php?module=tools-cache">pamięć podręczną</a></li>
-			<li>Uruchom wszystkie narzędzia <a href="../{1}/index.php?module=tools-recount_rebuild">przeliczania i przebudowy</a></li>
 			<li>Sprawdź wszystkie <a href="../{1}/index.php?module=config">ustawienia</a></li>
 			<li>Sprawdź uprawnienia <a href="../{1}/index.php?module=forum">działów</a> i <a href="../{1}/index.php?module=user-groups">grup</a></li>
 		</ul>';
@@ -237,6 +242,9 @@ $l['error_database_wrong_table'] = "Baza danych silnika {1} nie mogła zostać o
 $l['error_database_list'] = "Wygląda na to, że w podane dane do bazy danych są błędne";
 $l['error_database_continue'] = "Po naprawieniu powyższych błędów będzie można kontynuować proces importu.";
 $l['error_database_non_supported'] = 'Wygląda na to, że Twój hosting nie obsługuje żadnego z wymaganych rozszerzeń bazy danych.';
+$l['error_column_length_desc'] = 'Stara baza danych zawiera dane, które nie mogą być automatycznie połączone. Szczegółowe informacje na ten temat można znaleźć w <a href="http://docs.mybb.com/1.8/merge/column-length-check/">oficjalnej dokumentacji</a> (j. ang.).';
+$l['error_column_length_table'] = 'Kolumny znajdujące się w tabeli <b>{1}</b>, których dane zostaną wybrakowane';
+$l['error_column_length'] = '- {1} (Maksymalna długość: {2})';
 
 $l['loginconvert_title'] = "MyBB Merge System - import haseł użytkowników";
 $l['loginconvert_message'] = "<div class=\"error\">
