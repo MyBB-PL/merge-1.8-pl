@@ -425,7 +425,7 @@ $l['report_html'] = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//
 		<p>Tabela "mybb_debuglogs" znajdująca się w bazie danych forum zawiera informacje debugowania na temat przeprowadzonych działań. W przypadku problemów zwróć się o pomoc na <a href="http://community.mybb.com/">forum wsparcia MyBB</a>.</p>
 	</div>
 	<div id="footer">
-		<div class="float_right">MyBB © 2002-{12} MyBB Group, Polskie tłumaczenie © 2010-{12} <a href="http://www.mybboard.pl">Polski Support MyBB</a></div>
+		<div class="float_right">MyBB © 2002-{12} MyBB Group, Polskie tłumaczenie © 2007-{12} <a href="http://www.mybboard.pl">Polski Support MyBB</a></div>
 		<div>Raport wygenerowano {11}</div>
 	</div>
 </div>
