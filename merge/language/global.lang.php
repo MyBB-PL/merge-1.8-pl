@@ -1,7 +1,7 @@
 <?php
 /**
- * MyBB Merge System 1.8.7 Polish Language File
- * Copyright © 2008-2015 MyBBoard.pl Team
+ * MyBB Merge System 1.8.23 Polish Language File
+ * Copyright © 2008-2020 Webboard Team
  * Licencja: http://www.mybb.com/download/merge-system/license/
  */
 
